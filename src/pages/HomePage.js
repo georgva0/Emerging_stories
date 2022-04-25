@@ -17,10 +17,7 @@ const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch(
-      process.env.API_CALL +
-        "/all" /*"https://emerging-stories-backend.herokuapp.com/api/all"*/
-    )
+    fetch("https://emerging-stories-backend.herokuapp.com/api/all")
       .then((response) => response.json())
       .then((data) => {
         if (data) {
@@ -40,7 +37,6 @@ const HomePage = () => {
           <Col md="10">
             <h3 className="mt-5">
               BBC World Service ｜ Articles becoming popular{" "}
-              {process.env.API_CALL}{" "}
             </h3>
             <p className="mt-4">
               This application uses the{" "}
