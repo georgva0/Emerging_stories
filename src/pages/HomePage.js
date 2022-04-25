@@ -17,7 +17,9 @@ const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`${process.env.API_CALL}/all`)
+    fetch(
+      /*`${process.env.API_CALL}/all`*/ "https://emerging-stories-backend.herokuapp.com/api/all"
+    )
       .then((response) => response.json())
       .then((data) => {
         if (data) {
