@@ -18,7 +18,7 @@ const HomePage = () => {
 
   useEffect(() => {
     fetch(
-      /*`${process.env.API_CALL}/all`*/ "https://emerging-stories-backend.herokuapp.com/api/all"
+      `${process.env.API_CALL}/all` /*"https://emerging-stories-backend.herokuapp.com/api/all"*/
     )
       .then((response) => response.json())
       .then((data) => {
