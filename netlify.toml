@@ -3,3 +3,9 @@
         to = "https://emerging-stories-backend.herokuapp.com/api/:splat"
         status = 200
         force = true
+
+[[redirects]]
+from = "/africa"
+to = "/africa/index.html"
+status = 200
+force = false
