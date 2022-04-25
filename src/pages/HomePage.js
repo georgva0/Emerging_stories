@@ -40,6 +40,7 @@ const HomePage = () => {
           <Col md="10">
             <h3 className="mt-5">
               BBC World Service ｜ Articles becoming popular{" "}
+              {process.env.API_CALL}{" "}
             </h3>
             <p className="mt-4">
               This application uses the{" "}
