@@ -25,7 +25,7 @@ const RegionPage = () => {
   );
 
   useEffect(() => {
-    fetch(`http://localhost:8000/api/${region}`)
+    fetch(`${process.env.API_CALL}/${region}`)
       .then((response) => response.json())
       .then((data) => {
         if (data) {

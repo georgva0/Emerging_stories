@@ -17,7 +17,7 @@ const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/all")
+    fetch(`${process.env.API_CALL}/all`)
       .then((response) => response.json())
       .then((data) => {
         if (data) {
