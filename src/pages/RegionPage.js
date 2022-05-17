@@ -25,7 +25,7 @@ const RegionPage = () => {
   );
 
   useEffect(() => {
-    fetch(`https://emerging-stories-backend.herokuapp.com/api/${region}`)
+    fetch(`https://ws-backend-api.herokuapp.com/api/${region}`)
       .then((response) => response.json())
       .then((data) => {
         if (data) {
