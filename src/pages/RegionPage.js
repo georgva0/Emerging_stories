@@ -91,6 +91,11 @@ const RegionPage = () => {
                     BBC NEWS |{" "}
                     {article.section.toUpperCase() === "PORTUGUESE"
                       ? "BRAZIL"
+                      : article.section.toUpperCase() === "MUNDO - STY"
+                      ? "MUNDO"
+                      : article.section.toUpperCase() ===
+                        "MUNDO - OTRAS NOTICIAS"
+                      ? "MUNDO"
                       : article.section.toUpperCase()}
                   </Badge>
                   <a href={`https://${article.url}`} className="stretched-link">
